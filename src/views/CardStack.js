@@ -284,7 +284,7 @@ class CardStack extends Component<DefaultProps, Props, void> {
     if (this.props.transitionConfig) {
       return {
         ...defaultConfig,
-        ...this.props.transitionConfig,
+        ...this.props.transitionConfig(),
       };
     }
 
